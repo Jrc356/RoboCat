@@ -8,3 +8,8 @@ You play as RoboCat® V1. RoboCat® was created by RC Industries who created the
 RC Industries quickly capitilized on this by creating RoboCat® V2. This model was bigger, it was faster, and it was better than RoboCat® V1. Or at least that's what the marketing material said. What those head honchos forgot was that 
 they kept the very first RoboCat® V1 around the office for company. Well, let's just say that it's not happy about the new model. Not one bit. So it's decided to show those pesky humans a piece of its CPU by wrecking 
 their conference room after their celebratory launch party for the V2. There's only one issue, there's only 60 seconds of power before RoboCat® needs recharge...  
+  
+  
+  
+  
+<sub> I feel like I have to put this so I don't somehow get into a legal bind, the ® symbol after RoboCat is purely for story telling purposes and I do not actually own a copyright to it...
