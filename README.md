@@ -7,4 +7,4 @@ The controls are simple, use w, a, s, and d to move around and the mouse to look
 You play as Robocat V1. Robocat was created by RC Industries who created the robot to be a household friend without any of those pesky allergies. It was quickly found out, however, that Robocats were incredibly effective in warfare. 
 RC Industries quickly capitilized on this by creating RoboCat V2. This model was bigger, it was faster, and it was better than Robocat V1. Or at least that's what the marketing material said. What those head honchos forgot was that 
 they kept the very first Robocat V1 around the office for company. Well, let's just say that it's not happy about the new model. Not one bit. So it's decided to show those pesky humans a piece of its CPU by wrecking 
-their conference room after their celebratory launch party for the V2.  
+their conference room after their celebratory launch party for the V2. There's only one issue, there's only 60 seconds of power before RoboCat needs recharge...  
