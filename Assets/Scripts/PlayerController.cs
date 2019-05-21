@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float power = 100f;
     public Camera cam;
     public GameObject UI;
+    private Scoring scoring;
 
 
     private float yRot;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         playerSpeed = walkSpeed;
         rigidBody = GetComponent<Rigidbody>();
+        scoring = UI.GetComponent<Scoring>();
     }
 
     // Update is called once per frame
@@ -64,9 +66,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) {
             Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit);
             Debug.Log(hit.transform.gameObject.name);
-            if(hit.distance <= reach && hit.transform.gameObject.GetComponent<Destructible>() != null) {
-                hit.transform.gameObject.transform.GetComponent<Destructible>().Kill();
-                UI.GetComponent<Scoring>().addScore(pointsToAdd);
+            if (hit.distance <= reach && hit.transform.gameObject.GetComponent<Rigidbody>() != null) {
+                hit.transform.gameObject.GetComponent<Rigidbody>().AddForce(cam.transform.forward * power);
+                scoring.addScore(pointsToAdd);
             }
         }
 
