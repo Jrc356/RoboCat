@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public int pointsToAdd = 10;
     public float playerSpeed;
     public float walkSpeed = 2f;
     public float sprintSpeed = 10f;
@@ -35,7 +32,6 @@ public class PlayerController : MonoBehaviour
     {
         // -------------------- Movement --------------------
         transform.Rotate(0, Input.GetAxis("Mouse X") * mouseSensitivity, 0);
-        //transform.Rotate(-Input.GetAxis("Mouse Y") * mouseSensitivity, 0, 0);
 
         if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f) {
             Vector3 target = cam.transform.right * Input.GetAxisRaw("Horizontal") * playerSpeed * Time.deltaTime;
@@ -62,13 +58,13 @@ public class PlayerController : MonoBehaviour
             playerSpeed = walkSpeed;
         }
 
-        // -------------------- Push --------------------
+        // -------------------- Hitting --------------------
         if (Input.GetMouseButtonDown(0)) {
             Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit);
             Debug.Log(hit.transform.gameObject.name);
-            if (hit.distance <= reach && hit.transform.gameObject.GetComponent<Rigidbody>() != null) {
+            if (hit.distance <= reach && hit.transform.gameObject.GetComponent<Rigidbody>() != null && hit.transform.gameObject.GetComponent<Interacterable>() != null) {
                 hit.transform.gameObject.GetComponent<Rigidbody>().AddForce(cam.transform.forward * power);
-                scoring.addScore(pointsToAdd);
+                scoring.addScore(hit.transform.gameObject.GetComponent<Interacterable>().Hit(scoring));
             }
         }
 
