@@ -2,7 +2,7 @@
 ## Description  
 Robocat is a game made in the Unity game engine for the GoNetPlay monthly game jame from May 12th, 2019 to May 17th, 2019. Sadly, it wasn't completed in time but I still wanted to share it. Technically, it is not up to the specs for the game jam either as it would still need multiplayer (maybe I'll come back to that)
 ## Controls
-The controls are simple, use w, a, s, and d to move around and the mouse to look around. When near an object, click on it to destroy it.  
+The controls are simple, use w, a, s, and d to move around and the mouse to look around. When near an object, click on it to push it around. Pushing an object adds to the score counter. Everytime an object hits another object, you get more points. You will get the most points from hitting an object the first time. Everytime after the first will be a fraction of the points.
 ## Story
 You play as RoboCat® V1. RoboCat® was created by RC Industries who created the robot to be a household friend without any of those pesky allergies. It was quickly found out, however, that RoboCats® were incredibly effective in warfare. 
 RC Industries quickly capitilized on this by creating RoboCat® V2. This model was bigger, it was faster, and it was better than RoboCat® V1. Or at least that's what the marketing material said. What those head honchos forgot was that 
